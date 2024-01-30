@@ -25,7 +25,7 @@ public class AnimeController {
         return service.read(id);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     public Anime update(@RequestBody Anime anime) {
         return service.update(anime);
     }
